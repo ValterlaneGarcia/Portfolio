@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/ICONS/INDEX.icon" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>VALTER GARCIA</title>
+</head>
+<body>
+<!-- Barrar do site -->
+    <header>
+        <a href="#" class="Logo">Vg</a>
+
+        <nav class="Navbar">
+            <a href="https://www.linkedin.com/in/valterlane-garcia-332517227/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/ValterlaneGarcia"><i class='bx bxl-github'></i></a>
+        </nav>
+    </header>
+
+<!--Primeira seção de apresentação-->
+<section>
+<div id="particles-js"></div>
+    <div class="Entrada">
+        
+        <div class="Esquerda">
+                <h1>Olá! Eu sou</h1>
+                <p id="Nomes">Desenvolvedor back-end</p>
+                <p><span id="NomeV"><b>Valterlane Garcia,</b></span> desenvolvedor front-end! Apaixonado em desenvolvimento, tecnologia e inovação.</p><br>
+                
+            <a href="#">
+                <button onclick="infomation()" class="bn54">
+                    <span class="bn54span">Contactar me</span>
+                </button>
+            </a>
+            <p class="info">
+                <i class='bx bx-mobile'></i>: +55 85 9 9151-5833
+                <i class='bx bxl-gmail' ></i>: valterlanegarcia@gmail.com
+            </p>
+        </div>
+                
+        <div class="Direita">
+                 <img src="/FOTOS/Eu.png" alt="FotoDoProgamador" id="FotoEu">
+        </div>
+
+    </div>
+</section>
+
+<!-- Segunda seção, falando sobre mim-->
+<section class="Sobre">
+    <div class="containerSobre">
+        <div class="SobreMim">
+            <h1>SOBRE <span>MIM</span></h1>
+            <br>
+            <div class="process-wrapper">
+                <div id="progress-bar-container">
+                    <ul>
+                        <li onclick="ProgressBar(0)" id="step01" class="step step01 active">
+                            <div class="step-inner">Valter Garcia</div>
+                        </li>
+
+                        <li onclick="ProgressBar(1)" id="step02" class="step step02">
+                            <div class="step-inner">faculdade</div>
+                        </li>
+
+                        <li onclick="ProgressBar(2)" id="step03" class="step step03">
+                            <div class="step-inner">Tecnologias</div>
+                        </li>
+                    </ul>
+
+                    <div id="line">
+                        <div id="line-process"></div>
+                    </div>
+
+                </div>
+
+                <div id="progress-content-section">
+
+                        <div class="section-content" id="section1">
+                            <h2>Bem-vindo!</h2><br>
+                            <p>Olá, sou <span class="decorar"><strong>Valterlane Garcia</strong></span>, e trago comigo uma valiosa bagagem como Analista de Suporte,<br>
+                                                 uma profissão que me permitiu adentrar no fascinante mundo da programação. Minha linguagem <br>
+                                                 favorita é o <span class="decorar"><strong>JavaScript</strong></span>, mas foi com a linguagem <span class="decorar"><strong>JAVA</strong></span> que dei meus primeiros passos nesse
+                                                 universo empolgante! <br> Onde pude estar criando alguns sistemas que me ajudaram a automatizar alguns rotinas de suporte.
+                            </p><br>
+                                                <br><button onclick="cvbaixar()" class="bn54">
+                                                    <span class="bn54span">download CV</span>
+                                                </button>
+                        </div>
+
+                        <div class="section-content" id="section2">
+                            <h2>Engenharia De Software <i class='bx bxs-graduation'></i></h2><br>
+                            <p>Cursando o <span class="decorar"><strong>4° Semestre</strong></span></p>
+                        </div>
+
+                        <div class="section-content" id="section3">
+                            <h2>TECNOLOGIAS! <i class='bx bx-bulb'></i></h2><br>
+                            <span id="Org">
+                                <i class='bx bxl-javascript'></i>
+                                <i class='bx bxl-react'></i>
+                                <i class='bx bxl-nodejs' ></i>
+                                <i class='bx bxl-git'></i>
+                                <i class='bx bxl-github' ></i>
+                            </span>
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Terceira seção, fala sobre os projetos criado-->
+
+<h1 class="NomeProjeto">Projetos</h1>
+    <section class="meio">
+            <div class="container">
+                <div onclick="paginaPipFiscal()" class="card">
+                    <div class="content">
+                        <h2>PIP <span class="colorF">FISCAL</span></h2>
+                        <p>Sistema inteligente para correção de erros
+                            em arquivos AC.
+                        </p>
+                    </div>
+                </div>
+            
+                <div  onclick="paginaLogin()" class="card2">
+                    <div class="content2">
+                        <h2>WEB <span class="colorF">LOGIN</span></h2>
+                        <p>TELA DE LOGIN COM HTML E CSS</p>
+                    </div>
+                </div>
+            
+                <div  class="card3">
+                    <div class="content3">
+                        <h2><span class="colorF">+</span></h2>
+                        <p>PROJETOS EM BREVE</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+<script src="particles.js"></script>
+<script src="script.js"></script>
+<script src="vannilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card, .card2, .card3"),{
+        max: 25,
+        speed: 400,
+        glare: true
+    });
+</script>
+</body>
+</html>

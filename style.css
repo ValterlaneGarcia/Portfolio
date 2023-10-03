@@ -203,7 +203,7 @@ header {
     box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(250, 255, 255, 0.1);
   
-    background-image: url(/FOTOS/PIP\ FISCAL.png) ;
+    background-image: url(FOTOS/PIP\ FISCAL.png) ;
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -218,7 +218,7 @@ header {
 }
 
 .container .card:hover {
-    background-image: url(/FOTOS/PIP\ FISCAL\ PB.png) ;
+    background-image: url(FOTOS/PIP\ FISCAL\ PB.png) ;
     cursor: pointer;
 }
 
@@ -250,7 +250,7 @@ header {
     box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
     background: rgba(250, 255, 255, 0.1);
 
-    background-image: url(/FOTOS/LOGIN.png);
+    background-image: url(FOTOS/LOGIN.png);
     background-size: 100%;
     background-repeat: no-repeat;
     
@@ -265,7 +265,7 @@ header {
 }
 
 .container .card2:hover {
-    background-image: url(/FOTOS/LOGIN\ PB.png);
+    background-image: url(FOTOS/LOGIN\ PB.png);
     cursor: pointer;
 }
 
